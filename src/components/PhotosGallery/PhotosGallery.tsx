@@ -1,4 +1,3 @@
-import toast from "react-hot-toast";
 import type { Photo } from "../../types/photo";
 import Grid from "../Grid/Grid";
 import GridItem from "../GridItem/GridItem";
@@ -10,9 +9,6 @@ interface PhotoProps {
 }
 
 export default function PhotosGallery({ onSelect, photo }: PhotoProps) {
-  if (photo.length === 0) {
-    return toast.error('Photo not found')
-  }
   return <Grid>
     {photo.map((photo) => (
       <GridItem key={photo.id}>

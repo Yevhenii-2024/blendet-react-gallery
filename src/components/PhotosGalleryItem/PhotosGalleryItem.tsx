@@ -9,7 +9,7 @@ interface GalerryProps {
   onClick: () => void;
 }
 
-export default function PhotosGalleryItem({photo, onClick}: GalerryProps) {
+export default function PhotosGalleryItem({ photo, onClick }: GalerryProps) {
   return (
     <GridItem>
       <div
